@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - UltraMicro PRO</title>
+    <style>
+        :root {
+            --primary: #00FF88;
+            --bg-dark: #0F0F0F;
+            --surface: #1A1A1A;
+            --text-main: #FFFFFF;
+            --text-secondary: #B0B0B0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--surface);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(0,255,136,0.1);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p, ul {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(0,255,136,0.1);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--primary);
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="badge">ULTRAMICRO PRO - OFFICIAL PRIVACY POLICY</div>
+    <h1>Privacy Policy</h1>
+    
+    <p><strong>Effective Date:</strong> March 20, 2024</p>
+
+    <p>Welcome to <strong>UltraMicro PRO</strong>. Your privacy is our absolute priority. This document outlines how we handle your information and why we require specific permissions to provide you with a professional audio experience.</p>
+
+    <h2>1. Data Collection & Zero-Storage Policy</h2>
+    <p>At UltraMicro PRO, we believe your conversations are your own. 
+        <span class="highlight">We do NOT collect, store, transmit, or share any personal data, audio, or location information.</span> 
+        The app operates entirely on your device and does not have servers for storing user content.</p>
+
+    <h2>2. Technical Permissions (Mandatory)</h2>
+    <p>To deliver high-end audio routing during GSM calls, the app requires the following permissions:</p>
+    <ul>
+        <li><span class="highlight">RECORD_AUDIO (Microphone):</span> Used strictly as a technical bridge to route audio to external headsets. <strong>WE DO NOT RECORD, SAVE, OR HEAR YOUR CALLS.</strong> This is an Android system requirement for any app that interacts with microphone hardware.</li>
+        <li><span class="highlight">READ_PHONE_STATE:</span> Required to detect when a phone call is incoming or active (OFFHOOK). This allows the app to activate protection automatically without user intervention.</li>
+        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Allows the app to change the audio route from the internal microphone to your wired or Bluetooth headset during a call.</li>
+        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Necessary on Android 12+ to manage and communicate with Bluetooth SCO headsets for professional audio quality.</li>
+        <li><span class="highlight">POST_NOTIFICATIONS:</span> Used to show a status icon, ensuring you know when the protection engine is active.</li>
+    </ul>
+
+    <h2>3. Advertising (AdMob)</h2>
+    <p>The app integrates <strong>Google AdMob</strong> to support development through banner ads. AdMob may collect and use certain device identifiers (like the advertising ID) to serve personalized ads. You can review Google’s privacy practices at: 
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>Since UltraMicro PRO does not collect any personal data, it is compliant with COPPA and safe for users of all ages.</p>
+
+    <h2>5. Security Design</h2>
+    <p>The app is built using modern <strong>Jetpack Compose</strong> and <strong>MVVM</strong> architecture, ensuring that audio routing is performed securely within the Android sandbox environment. We do not use third-party analytics trackers (like Firebase Analytics) to ensure maximum privacy.</p>
+
+    <h2>6. Contact & Support</h2>
+    <p>If you have any questions or concerns regarding this policy, please contact our technical lead at:</p>
+    <p><span class="highlight">[TU_EMAIL_AQUÍ]</span></p>
+
+    <div class="footer">
+        © 2024 Sagon Labs - UltraMicro PRO Development Team<br>
+        <em>Committed to Professional Privacy and High-End Audio.</em>
+    </div>
+</div>
+
+</body>
+</html>
