@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - UltraMicro PRO</title>
+    <title>Privacy Policy - UltraMicro PRO</title>
     <style>
         :root {
             --primary: #00FF88;
@@ -11,6 +11,7 @@
             --surface: #1A1A1A;
             --text-main: #FFFFFF;
             --text-secondary: #B0B0B0;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         body {
@@ -22,6 +23,38 @@
             padding: 40px 20px;
         }
 
+        /* Selector de Idioma Premium */
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--surface);
+            padding: 5px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            gap: 5px;
+            z-index: 1000;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .lang-btn {
+            padding: 8px 18px;
+            border-radius: 50px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.8rem;
+            transition: var(--transition);
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
         .container {
             max-width: 850px;
             margin: 0 auto;
@@ -30,6 +63,7 @@
             border-radius: 28px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.6);
             border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
         }
 
         .badge {
@@ -74,23 +108,22 @@
             font-weight: bold;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            position: relative;
-        }
-
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 15px; padding-left: 25px; position: relative; }
         li::before {
             content: "→";
             color: var(--primary);
             position: absolute;
             left: 0;
             font-weight: bold;
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 20px;
+            border-left: 4px solid var(--primary);
         }
 
         .footer {
@@ -102,74 +135,89 @@
             padding-top: 30px;
         }
 
-        a {
-            color: var(--primary);
-            text-decoration: none;
-            border-bottom: 1px dashed var(--primary);
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            opacity: 0.7;
-            background: rgba(0,255,136,0.05);
-        }
-
-        .contact-box {
-            background: rgba(255,255,255,0.03);
-            padding: 20px;
-            border-radius: 16px;
-            margin-top: 20px;
-            border-left: 4px solid var(--primary);
-        }
+        /* Ocultar secciones dinámicamente */
+        [lang="en"] { display: none; }
     </style>
 </head>
 <body>
 
+<div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('es')">ES</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+
 <div class="container">
-    <div class="badge">ULTRAMICRO PRO - DOCUMENTACIÓN OFICIAL</div>
-    <h1>Política de Privacidad</h1>
-    
-    <p><strong>Fecha de entrada en vigor:</strong> 7 de abril de 2026</p>
+    <div id="content-es" lang="es">
+        <div class="badge">ULTRAMICRO PRO - DOCUMENTACIÓN OFICIAL</div>
+        <h1>Política de Privacidad</h1>
+        <p><strong>Fecha:</strong> 7 de abril de 2026</p>
 
-    <p>Bienvenido a <strong>UltraMicro PRO</strong>. Su privacidad es nuestra prioridad absoluta. Este documento detalla cómo gestionamos su información para ofrecerle una experiencia de audio profesional de alto nivel, cumpliendo con los estándares de Google Play.</p>
+        <h2>1. Tratamiento de Datos de Voz</h2>
+        <p>UltraMicro PRO procesa datos de audio bajo las siguientes condiciones:</p>
+        <ul>
+            <li><span class="highlight">Finalidad:</span> Funcionalidad de la aplicación (enrutamiento de audio).</li>
+            <li><span class="highlight">Procesamiento Efímero:</span> El audio se procesa en tiempo real localmente. No se almacena ni se transmite.</li>
+        </ul>
 
-    <h2>1. Tratamiento de Datos de Voz y Sonido</h2>
-    <p>Cumpliendo con nuestra declaración en Google Play Console, UltraMicro PRO procesa datos de audio bajo las siguientes condiciones:</p>
-    <ul>
-        <li><span class="highlight">Finalidad:</span> Los datos de audio se procesan exclusivamente para la <strong>Funcionalidad de la aplicación</strong>, permitiendo el enrutamiento de voz hacia periféricos externos y la mejora de la fidelidad sonora.</li>
-        <li><span class="highlight">Procesamiento Efímero:</span> El audio capturado se procesa en tiempo real y de forma local. <span class="highlight">No se almacena de forma persistente ni se transmite a servidores externos.</span></li>
-        <li><span class="highlight">Privacidad Total:</span> No compartimos sus grabaciones de voz o sonido con terceros, agencias de publicidad ni proveedores de análisis.</li>
-    </ul>
+        <h2>2. Permisos Técnicos</h2>
+        <ul>
+            <li><span class="highlight">RECORD_AUDIO:</span> Puente técnico para capturar flujo de audio.</li>
+            <li><span class="highlight">READ_PHONE_STATE:</span> Detección de llamadas para activación automática.</li>
+            <li><span class="highlight">BLUETOOTH_CONNECT:</span> Gestión de periféricos en Android 12+.</li>
+        </ul>
 
-    <h2>2. Permisos Técnicos y Transparencia</h2>
-    <p>Para garantizar el correcto funcionamiento del motor de audio, la aplicación requiere los siguientes permisos:</p>
-    <ul>
-        <li><span class="highlight">RECORD_AUDIO (Micrófono):</span> Utilizado como puente técnico para capturar el flujo de audio y redirigirlo al hardware seleccionado. La aplicación no realiza grabaciones ocultas.</li>
-        <li><span class="highlight">READ_PHONE_STATE:</span> Necesario para detectar llamadas entrantes y activar automáticamente el motor de protección de voz (Estado OFFHOOK).</li>
-        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Permite cambiar la ruta de entrada de audio entre el micrófono interno y dispositivos Bluetooth/Cable en tiempo real.</li>
-        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Requerido para la gestión de dispositivos manos libres mediante protocolo SCO de alta fidelidad en Android 12+.</li>
-        <li><span class="highlight">POST_NOTIFICATIONS:</span> Muestra un indicador persistente que le asegura que UltraMicro está activo y gestionando su privacidad de audio.</li>
-    </ul>
+        <div class="contact-box">
+            <span class="highlight">Soporte:</span> appsaiber@gmail.com
+        </div>
+    </div>
 
-    <h2>3. Publicidad y Terceros (AdMob)</h2>
-    <p>UltraMicro PRO integra <strong>Google AdMob</strong>. Google puede utilizar identificadores de publicidad anónimos para mostrar anuncios. Puede gestionar sus preferencias aquí: 
-        <a href="https://policies.google.com/privacy" target="_blank">Privacidad de Google</a>.</p>
+    <div id="content-en" lang="en">
+        <div class="badge">ULTRAMICRO PRO - OFFICIAL DOCUMENTATION</div>
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> April 7, 2026</p>
 
-    <h2>4. Seguridad por Diseño</h2>
-    <p>Desarrollada bajo arquitectura <strong>MVVM</strong> con <strong>Jetpack Compose</strong>, UltraMicro PRO garantiza que la gestión de permisos se realice de forma aislada y segura en su dispositivo. No utilizamos rastreadores de comportamiento (como Firebase Analytics) para proteger su anonimato.</p>
+        <h2>1. Voice and Audio Data Handling</h2>
+        <p>UltraMicro PRO processes audio data under the following conditions:</p>
+        <ul>
+            <li><span class="highlight">Purpose:</span> App functionality (audio routing).</li>
+            <li><span class="highlight">Ephemeral Processing:</span> Audio is processed locally in real-time. It is not stored or transmitted to external servers.</li>
+        </ul>
 
-    <h2>5. Contacto y Soporte</h2>
-    <p>Si tiene dudas técnicas sobre el tratamiento de sus datos de audio, contacte con nuestro equipo:</p>
-    
-    <div class="contact-box">
-        <span class="highlight">Correo electrónico:</span> appsaiber@gmail.com
+        <h2>2. Technical Permissions</h2>
+        <ul>
+            <li><span class="highlight">RECORD_AUDIO:</span> Technical bridge to capture audio streams.</li>
+            <li><span class="highlight">READ_PHONE_STATE:</span> Call detection for automatic engine activation.</li>
+            <li><span class="highlight">BLUETOOTH_CONNECT:</span> Hands-free device management for Android 12+.</li>
+        </ul>
+
+        <div class="contact-box">
+            <span class="highlight">Support:</span> appsaiber@gmail.com
+        </div>
     </div>
 
     <div class="footer">
-        © 2026 Sagon Labs - Equipo de Desarrollo UltraMicro PRO<br>
-        <em>Comprometidos con la Privacidad Profesional y el Audio de Alta Fidelidad.</em>
+        © 2026 Sagon Labs - UltraMicro PRO Development Team
     </div>
 </div>
+
+<script>
+    function setLang(lang) {
+        // Toggle buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if(btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+        });
+
+        // Toggle content
+        if(lang === 'es') {
+            document.getElementById('content-es').style.display = 'block';
+            document.getElementById('content-en').style.display = 'none';
+        } else {
+            document.getElementById('content-es').style.display = 'none';
+            document.getElementById('content-en').style.display = 'block';
+        }
+    }
+</script>
 
 </body>
 </html>
