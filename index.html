@@ -129,44 +129,44 @@
     <div class="badge">ULTRAMICRO PRO - DOCUMENTACIÓN OFICIAL</div>
     <h1>Política de Privacidad</h1>
     
-    <p><strong>Fecha de entrada en vigor:</strong> 20 de marzo de 2024</p>
+    <p><strong>Fecha de entrada en vigor:</strong> 7 de abril de 2026</p>
 
-    <p>Bienvenido a <strong>UltraMicro PRO</strong>. Su privacidad es nuestra prioridad absoluta. Este documento detalla cómo gestionamos su información y por qué requerimos permisos específicos para ofrecerle una experiencia de audio profesional de alto nivel.</p>
+    <p>Bienvenido a <strong>UltraMicro PRO</strong>. Su privacidad es nuestra prioridad absoluta. Este documento detalla cómo gestionamos su información para ofrecerle una experiencia de audio profesional de alto nivel, cumpliendo con los estándares de Google Play.</p>
 
-    <h2>1. Recopilación de Datos y Almacenamiento Cero</h2>
-    <p>En UltraMicro PRO, creemos que sus conversaciones son privadas. 
-        <span class="highlight">NO recopilamos, NO almacenamos, NO transmitimos ni compartimos ningún tipo de dato personal, audio o información de ubicación.</span> 
-        La aplicación funciona íntegramente de forma local en su dispositivo y no utiliza servidores externos para procesar su contenido.</p>
+    <h2>1. Tratamiento de Datos de Voz y Sonido</h2>
+    <p>Cumpliendo con nuestra declaración en Google Play Console, UltraMicro PRO procesa datos de audio bajo las siguientes condiciones:</p>
+    <ul>
+        <li><span class="highlight">Finalidad:</span> Los datos de audio se procesan exclusivamente para la <strong>Funcionalidad de la aplicación</strong>, permitiendo el enrutamiento de voz hacia periféricos externos y la mejora de la fidelidad sonora.</li>
+        <li><span class="highlight">Procesamiento Efímero:</span> El audio capturado se procesa en tiempo real y de forma local. <span class="highlight">No se almacena de forma persistente ni se transmite a servidores externos.</span></li>
+        <li><span class="highlight">Privacidad Total:</span> No compartimos sus grabaciones de voz o sonido con terceros, agencias de publicidad ni proveedores de análisis.</li>
+    </ul>
 
     <h2>2. Permisos Técnicos y Transparencia</h2>
-    <p>Para garantizar el correcto enrutamiento del audio hacia periféricos externos durante llamadas GSM, la aplicación requiere los siguientes permisos:</p>
+    <p>Para garantizar el correcto funcionamiento del motor de audio, la aplicación requiere los siguientes permisos:</p>
     <ul>
-        <li><span class="highlight">RECORD_AUDIO (Micrófono):</span> Se utiliza exclusivamente como un puente técnico para capturar el audio del micrófono externo (auriculares/Bluetooth). <span class="highlight">IMPORTANTE:</span> El sistema Android etiqueta este permiso como "Grabar audio", pero <strong>UltraMicro PRO NO graba, NO guarda ni escucha sus llamadas.</strong> Es un requisito técnico del sistema para gestionar hardware de audio.</li>
-        <li><span class="highlight">READ_PHONE_STATE:</span> Necesario para detectar cuándo hay una llamada activa (Estado OFFHOOK). Esto permite que el motor de protección se active automáticamente sin que usted tenga que abrir la interfaz.</li>
-        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Permite a la aplicación cambiar la ruta de entrada de audio desde el micrófono interno hacia sus auriculares con cable o dispositivos Bluetooth durante la llamada.</li>
-        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Requerido en versiones modernas de Android (12+) para gestionar la comunicación con auriculares Bluetooth mediante protocolo SCO de alta fidelidad.</li>
-        <li><span class="highlight">POST_NOTIFICATIONS:</span> Se utiliza para mostrar un icono de estado en la barra de tareas, informándole en todo momento que el motor de UltraMicro está activo y protegiendo su calidad de voz.</li>
+        <li><span class="highlight">RECORD_AUDIO (Micrófono):</span> Utilizado como puente técnico para capturar el flujo de audio y redirigirlo al hardware seleccionado. La aplicación no realiza grabaciones ocultas.</li>
+        <li><span class="highlight">READ_PHONE_STATE:</span> Necesario para detectar llamadas entrantes y activar automáticamente el motor de protección de voz (Estado OFFHOOK).</li>
+        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Permite cambiar la ruta de entrada de audio entre el micrófono interno y dispositivos Bluetooth/Cable en tiempo real.</li>
+        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Requerido para la gestión de dispositivos manos libres mediante protocolo SCO de alta fidelidad en Android 12+.</li>
+        <li><span class="highlight">POST_NOTIFICATIONS:</span> Muestra un indicador persistente que le asegura que UltraMicro está activo y gestionando su privacidad de audio.</li>
     </ul>
 
     <h2>3. Publicidad y Terceros (AdMob)</h2>
-    <p>La aplicación integra <strong>Google AdMob</strong> para financiar su desarrollo mediante banners publicitarios. AdMob puede recopilar y utilizar ciertos identificadores de dispositivo (como el ID de publicidad) para mostrar anuncios relevantes. Puede revisar la política de Google aquí: 
-        <a href="https://policies.google.com/privacy" target="_blank">Privacidad y Condiciones de Google</a>.</p>
+    <p>UltraMicro PRO integra <strong>Google AdMob</strong>. Google puede utilizar identificadores de publicidad anónimos para mostrar anuncios. Puede gestionar sus preferencias aquí: 
+        <a href="https://policies.google.com/privacy" target="_blank">Privacidad de Google</a>.</p>
 
     <h2>4. Seguridad por Diseño</h2>
-    <p>UltraMicro PRO ha sido desarrollada siguiendo los estándares de arquitectura <strong>MVVM</strong> y <strong>Jetpack Compose</strong>, lo que garantiza que la gestión de permisos se realice dentro del entorno seguro (sandbox) de Android. No utilizamos rastreadores de análisis de terceros (como Firebase Analytics) para asegurar su anonimato total.</p>
+    <p>Desarrollada bajo arquitectura <strong>MVVM</strong> con <strong>Jetpack Compose</strong>, UltraMicro PRO garantiza que la gestión de permisos se realice de forma aislada y segura en su dispositivo. No utilizamos rastreadores de comportamiento (como Firebase Analytics) para proteger su anonimato.</p>
 
-    <h2>5. Privacidad Infantil</h2>
-    <p>Dado que UltraMicro PRO no recopila datos personales de ningún tipo, es una aplicación segura para usuarios de todas las edades.</p>
-
-    <h2>6. Contacto y Soporte Técnico</h2>
-    <p>Si tiene cualquier duda técnica sobre esta política o el funcionamiento de los permisos, puede contactar con nuestro equipo de desarrollo en:</p>
+    <h2>5. Contacto y Soporte</h2>
+    <p>Si tiene dudas técnicas sobre el tratamiento de sus datos de audio, contacte con nuestro equipo:</p>
     
     <div class="contact-box">
-        <span class="highlight">Correo electrónico:</span> [appsaiber@gmail.com]
+        <span class="highlight">Correo electrónico:</span> appsaiber@gmail.com
     </div>
 
     <div class="footer">
-        © 2024 Sagon Labs - Equipo de Desarrollo UltraMicro PRO<br>
+        © 2026 Sagon Labs - Equipo de Desarrollo UltraMicro PRO<br>
         <em>Comprometidos con la Privacidad Profesional y el Audio de Alta Fidelidad.</em>
     </div>
 </div>
