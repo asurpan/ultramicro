@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - UltraMicro PRO</title>
+    <title>Política de Privacidad - UltraMicro PRO</title>
     <style>
         :root {
             --primary: #00FF88;
@@ -14,7 +14,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
             line-height: 1.6;
@@ -23,18 +23,30 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             background-color: var(--surface);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding: 50px;
+            border-radius: 28px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
             border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(0,255,136,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
         }
 
         h1 {
             color: var(--primary);
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 900;
             letter-spacing: -1px;
             margin-bottom: 30px;
@@ -44,31 +56,22 @@
 
         h2 {
             color: var(--primary);
-            font-size: 1.4rem;
-            margin-top: 30px;
+            font-size: 1.5rem;
+            margin-top: 40px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 800;
         }
 
         p, ul {
             color: var(--text-secondary);
             font-size: 1.1rem;
+            margin-bottom: 20px;
         }
 
         .highlight {
             color: var(--text-main);
             font-weight: bold;
-        }
-
-        .badge {
-            display: inline-block;
-            background-color: rgba(0,255,136,0.1);
-            color: var(--primary);
-            padding: 4px 12px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-bottom: 20px;
         }
 
         ul {
@@ -77,13 +80,13 @@
         }
 
         li {
-            margin-bottom: 12px;
-            padding-left: 20px;
+            margin-bottom: 15px;
+            padding-left: 25px;
             position: relative;
         }
 
         li::before {
-            content: "•";
+            content: "→";
             color: var(--primary);
             position: absolute;
             left: 0;
@@ -91,65 +94,80 @@
         }
 
         .footer {
-            margin-top: 50px;
+            margin-top: 60px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--text-secondary);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
         }
 
         a {
             color: var(--primary);
             text-decoration: none;
             border-bottom: 1px dashed var(--primary);
+            transition: all 0.3s ease;
         }
 
         a:hover {
-            opacity: 0.8;
+            opacity: 0.7;
+            background: rgba(0,255,136,0.05);
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 20px;
+            border-left: 4px solid var(--primary);
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="badge">ULTRAMICRO PRO - OFFICIAL PRIVACY POLICY</div>
-    <h1>Privacy Policy</h1>
+    <div class="badge">ULTRAMICRO PRO - DOCUMENTACIÓN OFICIAL</div>
+    <h1>Política de Privacidad</h1>
     
-    <p><strong>Effective Date:</strong> March 20, 2024</p>
+    <p><strong>Fecha de entrada en vigor:</strong> 20 de marzo de 2024</p>
 
-    <p>Welcome to <strong>UltraMicro PRO</strong>. Your privacy is our absolute priority. This document outlines how we handle your information and why we require specific permissions to provide you with a professional audio experience.</p>
+    <p>Bienvenido a <strong>UltraMicro PRO</strong>. Su privacidad es nuestra prioridad absoluta. Este documento detalla cómo gestionamos su información y por qué requerimos permisos específicos para ofrecerle una experiencia de audio profesional de alto nivel.</p>
 
-    <h2>1. Data Collection & Zero-Storage Policy</h2>
-    <p>At UltraMicro PRO, we believe your conversations are your own. 
-        <span class="highlight">We do NOT collect, store, transmit, or share any personal data, audio, or location information.</span> 
-        The app operates entirely on your device and does not have servers for storing user content.</p>
+    <h2>1. Recopilación de Datos y Almacenamiento Cero</h2>
+    <p>En UltraMicro PRO, creemos que sus conversaciones son privadas. 
+        <span class="highlight">NO recopilamos, NO almacenamos, NO transmitimos ni compartimos ningún tipo de dato personal, audio o información de ubicación.</span> 
+        La aplicación funciona íntegramente de forma local en su dispositivo y no utiliza servidores externos para procesar su contenido.</p>
 
-    <h2>2. Technical Permissions (Mandatory)</h2>
-    <p>To deliver high-end audio routing during GSM calls, the app requires the following permissions:</p>
+    <h2>2. Permisos Técnicos y Transparencia</h2>
+    <p>Para garantizar el correcto enrutamiento del audio hacia periféricos externos durante llamadas GSM, la aplicación requiere los siguientes permisos:</p>
     <ul>
-        <li><span class="highlight">RECORD_AUDIO (Microphone):</span> Used strictly as a technical bridge to route audio to external headsets. <strong>WE DO NOT RECORD, SAVE, OR HEAR YOUR CALLS.</strong> This is an Android system requirement for any app that interacts with microphone hardware.</li>
-        <li><span class="highlight">READ_PHONE_STATE:</span> Required to detect when a phone call is incoming or active (OFFHOOK). This allows the app to activate protection automatically without user intervention.</li>
-        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Allows the app to change the audio route from the internal microphone to your wired or Bluetooth headset during a call.</li>
-        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Necessary on Android 12+ to manage and communicate with Bluetooth SCO headsets for professional audio quality.</li>
-        <li><span class="highlight">POST_NOTIFICATIONS:</span> Used to show a status icon, ensuring you know when the protection engine is active.</li>
+        <li><span class="highlight">RECORD_AUDIO (Micrófono):</span> Se utiliza exclusivamente como un puente técnico para capturar el audio del micrófono externo (auriculares/Bluetooth). <span class="highlight">IMPORTANTE:</span> El sistema Android etiqueta este permiso como "Grabar audio", pero <strong>UltraMicro PRO NO graba, NO guarda ni escucha sus llamadas.</strong> Es un requisito técnico del sistema para gestionar hardware de audio.</li>
+        <li><span class="highlight">READ_PHONE_STATE:</span> Necesario para detectar cuándo hay una llamada activa (Estado OFFHOOK). Esto permite que el motor de protección se active automáticamente sin que usted tenga que abrir la interfaz.</li>
+        <li><span class="highlight">MODIFY_AUDIO_SETTINGS:</span> Permite a la aplicación cambiar la ruta de entrada de audio desde el micrófono interno hacia sus auriculares con cable o dispositivos Bluetooth durante la llamada.</li>
+        <li><span class="highlight">BLUETOOTH_CONNECT:</span> Requerido en versiones modernas de Android (12+) para gestionar la comunicación con auriculares Bluetooth mediante protocolo SCO de alta fidelidad.</li>
+        <li><span class="highlight">POST_NOTIFICATIONS:</span> Se utiliza para mostrar un icono de estado en la barra de tareas, informándole en todo momento que el motor de UltraMicro está activo y protegiendo su calidad de voz.</li>
     </ul>
 
-    <h2>3. Advertising (AdMob)</h2>
-    <p>The app integrates <strong>Google AdMob</strong> to support development through banner ads. AdMob may collect and use certain device identifiers (like the advertising ID) to serve personalized ads. You can review Google’s privacy practices at: 
-        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+    <h2>3. Publicidad y Terceros (AdMob)</h2>
+    <p>La aplicación integra <strong>Google AdMob</strong> para financiar su desarrollo mediante banners publicitarios. AdMob puede recopilar y utilizar ciertos identificadores de dispositivo (como el ID de publicidad) para mostrar anuncios relevantes. Puede revisar la política de Google aquí: 
+        <a href="https://policies.google.com/privacy" target="_blank">Privacidad y Condiciones de Google</a>.</p>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>Since UltraMicro PRO does not collect any personal data, it is compliant with COPPA and safe for users of all ages.</p>
+    <h2>4. Seguridad por Diseño</h2>
+    <p>UltraMicro PRO ha sido desarrollada siguiendo los estándares de arquitectura <strong>MVVM</strong> y <strong>Jetpack Compose</strong>, lo que garantiza que la gestión de permisos se realice dentro del entorno seguro (sandbox) de Android. No utilizamos rastreadores de análisis de terceros (como Firebase Analytics) para asegurar su anonimato total.</p>
 
-    <h2>5. Security Design</h2>
-    <p>The app is built using modern <strong>Jetpack Compose</strong> and <strong>MVVM</strong> architecture, ensuring that audio routing is performed securely within the Android sandbox environment. We do not use third-party analytics trackers (like Firebase Analytics) to ensure maximum privacy.</p>
+    <h2>5. Privacidad Infantil</h2>
+    <p>Dado que UltraMicro PRO no recopila datos personales de ningún tipo, es una aplicación segura para usuarios de todas las edades.</p>
 
-    <h2>6. Contact & Support</h2>
-    <p>If you have any questions or concerns regarding this policy, please contact our technical lead at:</p>
-    <p><span class="highlight">[TU_EMAIL_AQUÍ]</span></p>
+    <h2>6. Contacto y Soporte Técnico</h2>
+    <p>Si tiene cualquier duda técnica sobre esta política o el funcionamiento de los permisos, puede contactar con nuestro equipo de desarrollo en:</p>
+    
+    <div class="contact-box">
+        <span class="highlight">Correo electrónico:</span> [appsaiber@gmail.com]
+    </div>
 
     <div class="footer">
-        © 2024 Sagon Labs - UltraMicro PRO Development Team<br>
-        <em>Committed to Professional Privacy and High-End Audio.</em>
+        © 2024 Sagon Labs - Equipo de Desarrollo UltraMicro PRO<br>
+        <em>Comprometidos con la Privacidad Profesional y el Audio de Alta Fidelidad.</em>
     </div>
 </div>
 
